@@ -1,11 +1,10 @@
 // TODO: Include packages needed for this application
-const { rejects } = require('assert');
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { resolve } = require('path');
-// const generatePage = require('.utils/generateMarkdown')
+
+// const { generateMarkdown } = require('Develop/utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
-const questions = [];
+
 
 const promptProject = () => {
     return inquirer.prompt([
@@ -91,30 +90,40 @@ const promptProject = () => {
 
 
     ])
-    // TODO: Create a function to write README file
-.then(function(data) {
-    
-    fs.writeFile('newReadMe.md', JSON.stringify(data, null, '\t'), err => {
-        if (err) {
-            return console.log(err);
-        } 
-        console.log('success');
-        
-    });
-}) ;
+     .then(input => {
+         return input;
+     })
+       
 };
 
+   // TODO: Create a function to write README file
+   const writeFile = (fileName ,data) => {
 
+    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), err => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Your file has been created!');
 
+    });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() { 
+    promptProject()
+        // .then(input => {
+        //     return generateMarkdown(input);
+        // })
+        .then(markdown => {
+            writeFile('newReadMe.md', markdown);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+}
 
 // Function call to initialize app
 init();
 
-promptProject()
-    // .then(writeToFile => {
-        
-    // });
+
 
