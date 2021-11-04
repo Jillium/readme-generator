@@ -14,6 +14,7 @@ function renderLicenseSection(license) {}
 const generateMarkdown = (data) => {
   
   return `# ${data.projectTitle}
+  
 
   #${data.projectDescription}
   
@@ -37,6 +38,7 @@ const generateMarkdown = (data) => {
   
 
 `; 
+
 
 }
 

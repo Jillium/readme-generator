@@ -7,8 +7,8 @@ const { generateMarkdown } = require('./utils/generateMarkdown.js');
 
 
 const promptProject = () => {
-  
-    
+
+
     return inquirer.prompt([
         {
             type: 'input',
@@ -81,7 +81,7 @@ const promptProject = () => {
         // },
         // {
         //     type: 'input',
-        //     name: 'contactInfo',
+        //     name: 'github',
         //     message: 'Please enter your Github username'
         // },
         // {
@@ -92,21 +92,12 @@ const promptProject = () => {
 
 
     ])
-    // .then(projectData => {
-    //     portfolioData.projects.push(projectData);
-    //     if (projectData.confirmAddProject) {
-    //       return promptProject(portfolioData);
-    //     } else {
-    //       return portfolioData;
-    //     }
-    //   });
-       
 };
 
-   // TODO: Create a function to write README file
-   const writeFile = (fileName ,data) => {
+// TODO: Create a function to write README file
+const writeFile = (fileName, data) => {
 
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'), err => {
+    fs.writeFile(fileName, data, err => {
         if (err) {
             return console.log(err);
         }
@@ -116,11 +107,11 @@ const promptProject = () => {
 };
 
 // TODO: Create a function to initialize app
-function init() { 
+function init() {
     promptProject()
-    .then(input => {
-        return generateMarkdown(input);
-      })
+        .then(input => {
+            return generateMarkdown(input);
+        })
         .then(markdown => {
             writeFile('newReadMe.md', markdown);
         })
