@@ -5,37 +5,6 @@ const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 const questions = [];
 
-const promptUser = () => {
-    return inquirer.prompt([
-        {
-            type: 'input',
-            name: 'name',
-            message: 'What is your name? (Required)',
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log('Please enter your name!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
-            name: 'Github name',
-            message: 'What is your github username? (Required)',
-            validate: nameInput => {
-                if (nameInput) {
-                    return true;
-                } else {
-                    console.log('Please enter your github username!');
-                    return false;
-                }
-            }
-        },
-     ])
-}
-
 const promptProject = () => {
     return inquirer.prompt([
         {
@@ -132,8 +101,7 @@ function init() {}
 // Function call to initialize app
 init();
 
-promptUser()
-    .then(promptProject)
+promptProject()
     .then(writeToFile => {
         
     });
