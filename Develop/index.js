@@ -2,11 +2,13 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-// const { generateMarkdown } = require('Develop/utils/generateMarkdown.js');
+const { generateMarkdown } = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 
 
 const promptProject = () => {
+  
+    
     return inquirer.prompt([
         {
             type: 'input',
@@ -90,9 +92,14 @@ const promptProject = () => {
 
 
     ])
-     .then(input => {
-         return input;
-     })
+    // .then(projectData => {
+    //     portfolioData.projects.push(projectData);
+    //     if (projectData.confirmAddProject) {
+    //       return promptProject(portfolioData);
+    //     } else {
+    //       return portfolioData;
+    //     }
+    //   });
        
 };
 
@@ -111,9 +118,9 @@ const promptProject = () => {
 // TODO: Create a function to initialize app
 function init() { 
     promptProject()
-        // .then(input => {
-        //     return generateMarkdown(input);
-        // })
+    .then(input => {
+        return generateMarkdown(input);
+      })
         .then(markdown => {
             writeFile('newReadMe.md', markdown);
         })
