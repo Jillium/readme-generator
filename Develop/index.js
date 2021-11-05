@@ -37,58 +37,60 @@ const promptProject = () => {
                 }
             }
         },
-        // {
-        //     type: 'list',
-        //     name: 'projectLanguages',
-        //     message: 'What languages did you use to create this application? Select all that apply.',
-        //     choices: ['Javascript', 'CSS', 'HTML', 'Node', 'Other']
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'installation',
-        //     message: 'What steps are needed to install the application?',
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'usage',
-        //     message: 'What will this application be used for?'
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'credits',
-        //     message: 'Who were contributors on this project?'
-        // },
-        // {
-        //     type: 'list',
-        //     name: 'license',
-        //     message: 'Select the appropriate license for this project',
-        //     choices: [
-        //         'Apache',
-        //         'GNU',
-        //         'GPL',
-        //         'ISC',
-        //         'MIT',
-        //         'Open'
-        //     ]
-        // },
-        // // {
-        // //     // badges
-        // // },
-        // {
-        //     type: 'input',
-        //     name: 'tests',
-        //     message: 'Are there any tests included? Please describe.'
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'github',
-        //     message: 'Please enter your Github username'
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'email',
-        //     message: 'Please enter your email:'
-        // }
+        {
+            type: 'checkbox',
+            name: 'projectLanguages',
+            message: 'What languages did you use to create this application? Select all that apply.',
+            choices: ['Javascript', 'CSS', 'HTML', 'Node', 'Other']
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'What steps are needed to install the application?',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'What will this application be used for?'
+        },
+        {
+            type: 'input',
+            name: 'userContribution',
+            message: 'How can someone contribute?'
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Who were contributors on this project?'
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Select the appropriate license for this project',
+            choices: [
+                'Apache',
+                'GNU',
+                'GPL',
+                'ISC',
+                'MIT',
+                'Open',
+            ]
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Are there any tests included? Please describe.'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'Please enter your Github username'
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email:'
+        }
 
 
     ])
