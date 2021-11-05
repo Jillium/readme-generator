@@ -17,7 +17,8 @@
   A simple node.js application to create a professional readme for projects. Made for my coding bootcamp with the University of Utah. 
 
   
-  
+  ## Video tutorial 
+  https://drive.google.com/file/d/1qsT-1Rszqql1NchiHXHJk0hf4aL1__LX/view?usp=sharing
   
   ## Languages Used 
   Javascript,Node
@@ -33,7 +34,7 @@
 
  
   ### License
-  This application is covered under the MIT license
+  This application is covered under the MIT license   
   
 
   ### Questions
