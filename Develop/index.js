@@ -115,7 +115,7 @@ function init() {
             return generateMarkdown(input);
         })
         .then(markdown => {
-            writeFile('newReadMe.md', markdown);
+            writeFile('readMeDemo.md', markdown);
         })
         .catch(err => {
             console.log(err);
