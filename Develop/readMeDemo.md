@@ -1,6 +1,6 @@
-# Readme-Generator
+# s,s,s,
 
-  ![Badge for License](https://img.shields.io/badge/license-MIT-informational)
+  ![Badge for License](https://img.shields.io/badge/license-Apache-informational)
   
   ## Table of Contents
   -[Project Description](#projectDescription)
@@ -14,39 +14,39 @@
 
 
   ## Project Description 
-  A simple node.js application to create a professional readme for projects. Made for my coding bootcamp with the University of Utah. 
+  ndhdhdh
 
   
   
   
   ## Languages Used 
-  Javascript,Node
+  Javascript
 
   ### Installation Instructions
-  Clone the repo. Make sure to install the npm package inquirer using the command npm i inquirer. The program is run with node by using the command node index.js
+  ldldsl
 
   ### What will the app be used for? 
-  You can us this application to create your own readme for any project you can imagine. It provides choices for licensing, languages used, and has spaces for contributing. 
+  jdjdj
 
   ### How can you contribute?
-  Fork your own copy and have fun!
+  ldldl
 
   ### Tests 
-  n/a
+  jdjd
 
   ### Credits and Contributors 
-  n/a
+  jdjdj
 
   ### License
-  This application is covered under the MIT license
+  This application is covered under the Apache license
   
 
   ### Questions
   -------------------------------------------------------------------------------------------------------
   
-  Check me out on Github!: (https://github.com/Jillium) 
+  Check me out on Github!: (https://github.com/jdjd) 
   
-  Any questions? Email at holmesjillanne@gmail.com
+  Any questions? Email at jdjd
   
   
 
